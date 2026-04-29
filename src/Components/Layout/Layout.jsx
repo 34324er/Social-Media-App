@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "./../Footer/Footer";
 import Navbar from "./../Navbar/Navbar";
 import { Outlet, RouterProvider } from "react-router-dom";
 
@@ -10,7 +9,6 @@ export default function Layout() {
       <div className="container w-[80%] min-h-screen mx-auto  p-4 ">
         <Outlet />
       </div>
-      <Footer />
     </>
   );
 }
