@@ -178,8 +178,25 @@ export default function PostCard({ post, isPostDetails = false }) {
     setOpenMenu(false); // 🔥 يقفل المينيو
   };
   return (
-    <article className="overflow-visible w-full rounded-none sm:rounded-xl border border-slate-200 bg-white shadow-sm mb-6">
-      {/* HEADER */}
+<article
+  className="
+    w-full
+    rounded-none
+    sm:rounded-xl
+    border border-slate-200
+    bg-white
+    shadow-sm
+    mb-6
+
+    /* التحكم في العرض */
+    max-w-full
+    sm:max-w-xl
+    md:max-w-2xl
+    lg:max-w-3xl
+
+    mx-auto
+  "
+>      {/* HEADER */}
       <div className="p-4 flex justify-between items-start">
         <div className="flex items-center gap-3">
           <img
