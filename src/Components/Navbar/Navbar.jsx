@@ -6,6 +6,7 @@ import { AuthContext } from "../../Context/AuthContext";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
 
+
 // ✅ API
 const getUnreadCount = async () => {
   const token = localStorage.getItem("userToken");
@@ -57,12 +58,12 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex items-center gap-3">
           <img
-            src="/route.png"
+            src="/logo (2).png"
             alt="Route Posts"
             className="h-9 w-9 rounded-xl object-cover"
           />
           <p className="hidden text-xl font-extrabold text-slate-900 sm:block">
-            Route Posts
+            Nexora
           </p>
         </div>
 
